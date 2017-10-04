@@ -1,0 +1,259 @@
+.navbar, .navbar-header, .navbar-nav, .navbar-nav li, .s-main-content, .s-sidebar { 
+/*	border: 1px solid red;*/
+	}
+
+
+/* GLOBAL - typography*/
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+.navbar-header p, h1, h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight:bold;
+	font-size:24px;
+}
+
+h2 { font-size:18px; }
+footer p { font-size:12px; }
+
+p { line-height: 1.5em;}
+
+h1, h2 { color:#4aaaa5; }
+p { color: #666; }
+footer p { color:#ccc; }
+.navbar-text { color: #FFF; text-align:center;}
+
+label {
+	font-size: 16px;
+	color:#999;
+}
+
+#contact .button {
+	font-size: 16px;
+	color: #fff;
+}
+
+/*  GLOBAL - Other  */
+a { cursor:pointer; }
+
+
+/*  GLOBAL - interaction effects  */
+.navbar-nav a:link { color:#999; }
+.navbar-nav a:visited { color:#999; }
+.navbar-nav a:hover { color: #4aaaa5; }
+.navbar-nav li:hover a { background-color: #fff; }
+.navbar-nav a:active { color: #185b56; }
+
+.s-sidebar a img:hover { opacity:.75; }
+#s-contact .button:hover { opacity:.75; }
+#s-contact .button:active { background-color: #185b56;}
+
+
+/* styling and spacing - TOP */
+#s-top { 
+	border-bottom: 1px solid #666;
+	overflow:auto;
+}
+
+
+.navbar { 
+	background: #FFF;
+	margin-bottom: -1px;
+}
+
+.navbar-header { 
+	color: white;
+	background:#4aaaa5;
+	}
+
+.navbar-nav { 
+	background: #FFF;
+}
+.navbar-nav li { 
+
+	background: #FFF;
+}
+
+.navbar-nav li a { 
+	line-height: 30px;
+}
+
+
+
+
+/* styling and spacing - ABOUT */
+#s-middle { 
+	padding-bottom: 25px;
+	padding-top: 25px;
+	background: #eee url("../images/az_subtle.png") repeat;
+}
+
+.s-main-content {
+	background:white;
+	border: 1px solid #ccc;
+}
+
+.s-main-content p {
+	margin-bottom: 15px;
+}
+
+.s-main-content {
+	padding: 10px 25px 25px 25px;
+	margin-bottom: 25px;
+}
+
+.s-main-content h1 {
+	border-bottom: 1px solid #666;
+	margin-bottom: 25px;
+	padding-bottom: 25px;	
+}
+
+#s-about img {
+	padding-right: 25px;
+	padding-bottom: 10px;
+}
+
+/* styling and spacing - PORTFOLIO */
+.s-main-content .box {
+
+
+}
+
+.s-main-content .box h4 {
+	position:relative;
+	top:-60px;
+	width:45%;
+	height:auto;
+	padding:15px 5px 15px 5px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	background-color:#4aaaa5;
+	opacity: .85;
+}
+.s-main-content .box img {
+	width:45%;
+	height:auto;
+	overflow:hidden;
+}
+
+/* styling and spacing - CONTACT */
+#s-contact form * {
+	display:block;
+}
+
+#s-contact .form-element, #contact textarea {
+	margin: 8px 0 25px 0;
+	width:100%;
+}
+
+#s-contact form textarea {
+	height:200px;
+	border: 1px solid #ccc;
+}
+
+#s-contact form input {
+	border: 1px solid #ccc;
+	padding: 8px;
+}
+
+#s-contact form input::placeholder {
+	color: #ccc;
+}
+
+#s-contact .button {
+	padding: 10px 25px;
+/*	border-radius: 10px;*/
+	background:#4aaaa5;
+}
+
+/* styling and spacing - PORTFOLIO */
+
+/* styling and spacing - SIDEBAR */
+.s-sidebar { 
+	padding-right:0;
+}
+.s-sidebar aside { 
+	padding: 10px 25px 25px 25px;
+	margin-left: 25px;
+}
+
+.s-sidebar aside {
+	background:white;
+	border: 1px solid #ccc;
+}
+
+.s-sidebar  h2 {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 25px;
+	margin-bottom: 15px;
+}
+
+.s-sidebar aside img { 
+	margin-top:10px;
+	padding-right: 10px;
+}
+
+
+
+
+/* styling and spacing - BOTTOM */
+#s-bottom {
+	background:#666;
+	padding:25px;
+	text-align: center;
+	border-top: 5px solid #4aaaa5;
+}
+
+
+/* media queries */
+
+
+@media (max-width: 991px) { 
+
+#s-about img {
+	padding-right:0;
+	width:385px;
+	height:285px;
+	}
+
+/*.s-sidebar aside { 
+	width:283px;
+	}*/
+}
+
+
+/*MD*/
+@media (max-width: 767px) { 
+.navbar-text {
+	text-align:center;
+	}
+
+#s-about img {
+	padding-right:25px;
+	width:50%;
+	height:auto;
+	}
+
+.s-sidebar aside { 
+	margin-left:-15px;
+	}
+}
+
+/*XS*/
+@media (max-width: 575px) { 
+#s-about img {
+	padding-right:0;
+	width:100%;
+	height:auto;
+	}
+
+	.s-sidebar aside { 
+	margin-left:-15px;
+	}
+}
+
+
+
